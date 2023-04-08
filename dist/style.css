@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar {
+   background-color: #0092ca; 
+}
+
+.card-title {
+    background-color:#0092ca ;
+    color: #eeeeee;
+}
+
+.card-body {
+    background-color:#eeeeee ;
+    color: #0092ca;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px auto;
+}

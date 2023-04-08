@@ -36,9 +36,9 @@ const generateTeam = (employeearray) => {
             <h3>Manager</h3>
           </div>
           <div class="card-body">
-            <p class="id">ID: ${employeearray[i].getID()}</p>
+            <p class="id">ID: ${employeearray[i].getId()}</p>
             <p class="email">Email: ${employeearray[i].getEmail()}</p>
-            <p class="office-number">${employeearray[i].getOfficeNumber()}</p>
+            <p class="office-number">Office Number: ${employeearray[i].getOfficeNumber()}</p>
           </div>`
         }else if (employeearray[i].getRole() === "Engineer") {
             html += `<div class="card-title">
@@ -46,9 +46,9 @@ const generateTeam = (employeearray) => {
             <h3>Engineer</h3>
           </div>
           <div class="card-body">
-            <p class="id">ID: ${employeearray[i].getID()}</p>
+            <p class="id">ID: ${employeearray[i].getId()}</p>
             <p class="email">Email: ${employeearray[i].getEmail()}</p>
-            <p class="github">${employeearray[i].getGithub()}</p>
+            <p class="github">GitHub: ${employeearray[i].getGithub()}</p>
           </div>`
         } else {
             html += `<div class="card-title">
@@ -56,9 +56,9 @@ const generateTeam = (employeearray) => {
             <h3>Intern</h3>
           </div>
           <div class="card-body">
-            <p class="id">ID: ${employeearray[i].getID()}</p>
+            <p class="id">ID: ${employeearray[i].getId()}</p>
             <p class="email">Email: ${employeearray[i].getEmail()}</p>
-            <p class="school">${employeearray[i].getSchool()}</p>
+            <p class="school">School: ${employeearray[i].getSchool()}</p>
           </div>`
         }
     } return html 

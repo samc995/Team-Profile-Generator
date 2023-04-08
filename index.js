@@ -8,6 +8,8 @@ const Intern = require(`./lib/Intern`);
 
 const fs = require(`fs`);
 
+const path = require('path');
+
 const inquirer = require(`inquirer`);
 
 const employeeArray = [];
@@ -68,18 +70,18 @@ const addIntern = () => {
       name: "internSchool",
       message: "What is the intern's school?",
     },
-  ]};
+  ])
   .then((answers) => {
     const intern = new Intern(
-      answers.name,
-      answers.ID,
-      answers.email,
-      answers.school
+      answers.internName,
+      answers.internID,
+      answers.internEmail,
+      answers.internSchool
     );
     employeeArray.push(intern);
     createTeam();
   });
-
+}
 
 
 const addEngineer = () => {
@@ -105,15 +107,15 @@ const addEngineer = () => {
       name: "engineerGithub",
       message: "What is the engineer's github?",
     },
-  ]};
+  ])
   .then((answers) => {
     const engineer = new Engineer(
-      answers.name,
-      answers.ID,
-      answers.email,
-      answers.github
+      answers.engineerName,
+      answers.engineerID,
+      answers.engineerEmail,
+      answers.engineerGithub
     );
-    employeeArray.push(intern);
+    employeeArray.push(engineer);
     createTeam();
   });
 
@@ -141,4 +143,4 @@ const createTeam = () => {
         );
       }
     });
-};
+  }
