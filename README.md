@@ -10,7 +10,6 @@ This module allows you to add team members to a deployed HTML using prompts in t
 - It solves the issue of having to hard code employees information and can be updated easily.
 - I learned how to code JavaScript that can be be generated and updated though the command line.
 
-## Table of Contents (Optional)
 
 
 ## Usage
