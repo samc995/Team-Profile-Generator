@@ -3,7 +3,8 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: sans-serif;
+    
 }
 
 .navbar {
@@ -11,23 +12,34 @@ body {
    display: flex;
    justify-content: center;
    color: #eeeeee;
-   
+   font-size: 40px;
+  
 }
 
+
+
+
+ container { 
+    height: 2em; 
+    
+}
 
 
 .card-title {
     background-color:#0092ca ;
     color: #eeeeee;
+    text-align: center;
 }
 
 .card-body {
     background-color:#eeeeee ;
     color: #0092ca;
+    margin-top: -10%
 }
 
 .container {
     display: flex;
     justify-content: space-evenly;
     margin: 100px auto;
+    
 }
